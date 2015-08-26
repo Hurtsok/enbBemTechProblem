@@ -1,8 +1,8 @@
-## Установка
+## РЈСЃС‚Р°РЅРѕРІРєР°
 * `npm install`
 * `bower install`
 
-## Сборка
-`enb make -n` или `enb make pages/index -n`
+## РЎР±РѕСЂРєР°
+`enb make -n` РёР»Рё `enb make pages/index -n`
 
 

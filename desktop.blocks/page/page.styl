@@ -1,0 +1,104 @@
+html
+  padding: 0px;
+  margin: 0px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-text-resize: 100%;
+
+.page
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: #19191a;
+  margin: 0px;
+  padding 0px;
+
+cf()
+  &:before, &:after
+    content ''
+    display table
+  &:after
+    clear both
+
+after()
+  content: '';
+  width: 100%;
+  display: block;
+  clear: both;
+  height: 0px;
+  line-height: 0px;
+
+textarea, input[type="text"]
+  -webkit-appearance: none;
+
+resetDefaultFormElemStyles()
+  border-radius: 0px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+iconsSprite()
+  background-image: url('/static/images/skin/all-icons.svg?v=31');
+  background-repeat: no-repeat;
+
+resetTap()
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -moz-tap-highlight-color: rgba(0,0,0,0);
+  -o-tap-highlight-color: rgba(0,0,0,0);
+
+noselect()
+  user-select: none;
+
+svgSprite()
+  background-image: url('/static/images/mobile/skin/sprite.svg')
+  background-repeat: no-repeat
+  background-position: 0 0
+
+mobileFontsSet()
+  font-family 'drom-mobile'
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+webkitTouchScroll(block)
+  {block}::-webkit-scrollbar
+    -webkit-appearance: none;
+    width: 10px;
+    background: white;
+
+  {block}::-webkit-scrollbar-thumb
+    -webkit-appearance: none;
+    background: $drom-gray;
+
+convertColorToRgba(color, opacity)
+  if color is 'drom-red'
+    background: rgba(219, 0, 27, opacity)
+
+// Colors speacial for rudenko@farpost.com and someone else (this colors not in guidlines)
+$drom-red-old = #F00000 //старый красный цвет
+$drom-border-link = #FAB2B2 // цвет подчерков
+$drom-border-notif = #d7d4bf // Цвет бордера у смежных блоков
+$drom-visited-link = #8d009c // Цвет посещенной ссылки
+$drom-border-grey = #C6C6C6 // Цвет бордера (хедера и футера) в тач версии
+// -------------------------------------------------------------
+
+// GUIDLINES COLORS
+$drom-red = #db001b // Цвет логотипа, наведенного меню, плашек, наведенных ссылок, активных элементов
+$drom-blue = #1b75cc // Цвет активного меню, ссылок, иконок
+$drom-dark = #2c2726 // Цвет основного меню, плашек
+$drom-black = #181818 // Цвет основного текста
+$drom-gray-dark = #8b8b8b // Цвет второстепенного текста, обводка активных элементов, текстов и иконка на заблокированной дополнительной кнопке
+$drom-gray = #c1c1c1 // Цвет плашек, обводки неактивных элементов
+$drom-gray-alt = #e8e8e8 // Цвет дополнительных кнопок
+$drom-gray-light = whitesmoke // #F5F5F5 Цвет второстепенного фона
+$drom-yellow = #fffbe2 // Спецразмещение, фон нейтрального нотификейшна, цвет желтых плашек
+$drom-red-light = #f8ccd1 // Фон отрицательного нотификейшна
+$drom-green-light = #e7f1d8 // Фон положительного нотификейшна
+$drom-yellow-dark = #f9f4ad // Тэги, цвет темных желтых плашек
+$drom-green = #85b73e // Плашки статусов, редко - как подтверждающий
+
+$breakpoint-max-height = 450px

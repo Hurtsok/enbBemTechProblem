@@ -1,0 +1,22 @@
+.DS_Store
+bem-bl
+bl-core-bemhtml
+node_modules
+.bem/cache
+.bem/tmp
+.idea
+.git
+bem-bl
+pages/.bem/*
+npm-debug.log
+bower_components
+
+# Ignore everything
+pages/**/*
+pages-mobile/**/*
+blocks.examples/**/*
+pages-documentation/**/*
+# But not these files...
+!pages/**/*.bemjson.js
+!pages-mobile/**/*.bemjson.js
+!pages-documentation/**/*.bemdecl.js

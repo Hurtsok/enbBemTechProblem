@@ -1,0 +1,22 @@
+{
+  "name": "Test",
+  "version": "0.0.0",
+  "authors": [
+    "Vladimir Rudenko <hurtsok@gmail.com>"
+  ],
+  "description": "Bem-express",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bem-core": "2.5.0",
+    "react": "~0.12.2",
+    "bem-components": "2.0.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

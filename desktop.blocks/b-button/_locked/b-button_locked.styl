@@ -1,0 +1,19 @@
+//Черная кнопка
+.b-button_theme_black.b-button_locked
+  background: $drom-gray;
+
+.drom-notouch .b-button_theme_black.b-button_locked:hover
+.drom-touch .b-button_theme_black.b-button_locked:active
+  background: $drom-gray;
+  cursor: inherit;
+
+//Серая кнопка
+.b-button_theme_light.b-button_locked
+  .b-button__text
+    color: $drom-gray-dark; opacity: 0.65;
+
+.drom-notouch .b-button_theme_light.b-button_locked:hover
+.drom-touch .b-button_theme_light.b-button_locked:active
+  background: $drom-gray-alt;
+  border-color: $drom-gray;
+  cursor: default;

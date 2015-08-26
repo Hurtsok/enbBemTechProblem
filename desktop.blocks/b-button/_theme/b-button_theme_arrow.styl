@@ -1,0 +1,31 @@
+.b-button_theme_arrow
+  font-family: Verdana;
+  border: 0px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 0px;
+  background: none;
+
+  .b-button__text
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 13px;
+
+.b-button_theme_arrow.b-button_active
+    .b-ico_type_arrow
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+
+.b-button_theme_arrow.b-button_block
+  display: block;
+
+.drom-notouch .b-button_theme_arrow:hover .b-ico_type_arrow
+.drom-touch .b-button_theme_arrow:active .b-ico_type_arrow
+  background-position: -33px -24px
+
+.drom-notouch .b-button_theme_arrow:hover .b-button__text
+.drom-touch .b-button_theme_arrow:active .b-button__text
+  color: $drom-red;
+  text-decoration: none;
+  border-color: $drom-border-link;
